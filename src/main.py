@@ -1,4 +1,5 @@
 import os
+import re
 import random
 import json
 from functools import lru_cache
@@ -14,31 +15,34 @@ from permissions import is_user_or_chat_not_allowed, supported_sites
 
 load_dotenv()
 
+USERS_FILE = "users.json"
 
-# Cache responses from JSON file
+def load_users():
+    try:
+        with open(USERS_FILE, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return {}
+
+def save_users(users):
+    with open(USERS_FILE, "w") as file:
+        json.dump(users, file)
+
+users = load_users()
+
 @lru_cache(maxsize=1)
 def load_responses():
-    """Function loading bot responses based on language setting."""
-    language = os.getenv("LANGUAGE",
-                         "en").lower()  # Default to Ukrainian if not set
-
+    language = os.getenv("LANGUAGE", "en").lower()
     filename = "responses_ua.json" if language == "ua" else "responses_en.json"
     try:
         with open(filename, "r", encoding="utf-8") as file:
             data = json.load(file)
             return data["responses"]
     except FileNotFoundError:
-        # Return a minimal set of responses if no response files found
-        return [
-            "Sorry, I'm having trouble loading my responses right now! 😅",
-            "Вибачте, у мене проблеми із завантаженням відповідей! 😅"
-        ]
-
+        return ["Sorry, I'm having trouble loading my responses!"]
 
 responses = load_responses()
 
-
-# Check if message has a spoiler
 def spoiler_in_message(entities):
     if entities:
         for entity in entities:
@@ -46,52 +50,45 @@ def spoiler_in_message(entities):
                 return True
     return False
 
+# ✅ Valid link check function
+def is_valid_link(text):
+    pattern = r"(https?:\/\/)?(www\.)?(instagram\.com|facebook\.com|youtube\.com|youtu\.be)\/[\w\-\/\?&=]+"
+    return bool(re.search(pattern, text))
 
-# Handle incoming messages and process videos
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):  # pylint: disable=unused-argument
-    """Handle incoming messages and process videos."""
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):  
     if not update.message or not update.message.text:
         return
 
+    chat_id = update.effective_chat.id
+    user_id = update.effective_user.id
     message_text = update.message.text.strip()
 
-    # Handle bot mention response
-    if "ботяра" in message_text.lower() or "bot_health" in message_text.lower(
-    ):
+    # ✅ Welcome message for new users
+    if str(user_id) not in users:
+        users[str(user_id)] = True
+        save_users(users)  
         await update.message.reply_text(
-            f"{random.choice(responses)}\n"
-            f"[Chat ID]: {update.effective_chat.id}\n"
-            f"[Username]: {update.effective_user.username}")
+            "👋 *Welcome to Insta/Facebook/Youtube Shorts Downloader!*\n\n"
+            "📥 Just send a video link and I'll download it for you!\n"
+            "✅ Supported: Instagram, Facebook, YouTube Shorts\n"
+            "⚡ *Paste your link below and enjoy!*",
+            parse_mode="Markdown"
+        )
+
+    # ✅ Check if link is valid
+    if not is_valid_link(message_text):
+        await update.message.reply_text("⚠️ *Invalid link! Please send a correct link.*", parse_mode="Markdown")
         return
 
-    # Check if user is not allowed
-    if is_user_or_chat_not_allowed(update.effective_user.username,
-                                   update.effective_chat.id):
+    if is_user_or_chat_not_allowed(update.effective_user.username, chat_id):
         if update.effective_chat.type == "private":
             await update.message.reply_text(
                 f"You are not allowed to use this bot.\n "
                 f"[Username]:  {update.effective_user.username}\n "
-                f"[Chat ID]: {update.effective_chat.id}")
+                f"[Chat ID]: {chat_id}")
         return
 
-    message_text = message_text.replace("** ", "**")
-
-    # Quick check before more expensive operations
-    if not any(site in message_text for site in supported_sites):
-        return
-
-    if "instagram.com/stories/" in message_text:
-        await update.message.reply_text("Сторіз не можу скачати. Треба логін")
-        return
-
-    # Remove '**' prefix and any spaces if present
-    message_text = message_text.replace(
-        "**", "") if message_text.startswith("**") else message_text
-    print_logs(f"message_text is {message_text}")
-
-    # Send checkpoint: User input received
-    processing_msg = await update.message.reply_text(
-        "🚀 Processing your request...")
+    processing_msg = await update.message.reply_text("🚀 Processing your request...")
 
     # Download the video
     try:
@@ -107,8 +104,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):  #
     # Compress video if it's larger than 50MB
     try:
         if os.path.getsize(video_path) / (1024 * 1024) > 50:
-            await update.message.reply_text(
-                "⚙️ Compressing video, file size is above 50MB.")
+            await update.message.reply_text("⚙️ Compressing video, file size is above 50MB.")
             compress_video(video_path)
     except Exception as e:
         print_logs(f"Error during video compression: {e}")
@@ -116,7 +112,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):  #
             f"❌ Error occurred during video compression: {e}")
         return
 
-    # Check if the message has a spoiler
     visibility_flag = spoiler_in_message(update.message.entities)
 
     # Send the video to the chat
@@ -127,12 +122,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):  #
                                                  disable_notification=True,
                                                  write_timeout=8000,
                                                  read_timeout=8000)
-            # Send final checkpoint
-            # await update.message.reply_text("✅ Video sent successfully!")
     except TimedOut as e:
         print_logs(f"Telegram timeout while sending video. {e}")
-        await update.message.reply_text(
-            "⏳ The video request timed out while sending. Please try again.")
+        await update.message.reply_text("⏳ The video request timed out while sending. Please try again.")
     except telegram.error.TelegramError as e:
         print_logs(f"Telegram error while sending video: {e}")
         await update.message.reply_text(
@@ -140,16 +132,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):  #
             f"{os.path.getsize(video_path) / (1024 * 1024):.2f}MB. Telegram API Max is 50MB."
         )
     finally:
-        # Clean up regardless of success or failure
         if video_path:
             cleanup_file(video_path)
-
-        # Delete the "Processing your request..." message
         try:
-            await processing_msg.delete()  # Delete the original message
+            await processing_msg.delete()
         except Exception as e:
             print(f"Failed to delete processing message: {e}")
-
 
 # Main function
 def main():
@@ -158,11 +146,10 @@ def main():
         application = Application.builder().token(bot_token).build()
         application.add_handler(
             MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-        print("Bot started. Ctrl+c to stop")
+        print("🚀 Bot started. Press Ctrl+C to stop.")
         application.run_polling()
     except (telegram.error.TelegramError, KeyboardInterrupt) as e:
         print("Error occurred while polling updates:", e)
-
 
 if __name__ == "__main__":
     main()
