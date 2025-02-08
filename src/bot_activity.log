@@ -1,0 +1,370 @@
+2025-02-09 01:34:10,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:34:10,951 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:35:28,424 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:35:28,424 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:39:36,664 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:39:36,664 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:41:58,278 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:41:58,278 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:44:01,910 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:44:01,910 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:45:43,413 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:45:43,413 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:45:43,631 - INFO - Bot started and listening for messages.
+2025-02-09 01:45:44,514 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-09 01:45:44,831 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-09 01:45:44,831 - INFO - Scheduler started
+2025-02-09 01:45:44,831 - INFO - Application started
+2025-02-09 01:45:45,637 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:45:45,637 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: sdfas]
+2025-02-09 01:45:45,637 - WARNING - Invalid Link: sdfas from User 1289304344
+2025-02-09 01:45:46,247 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:45:46,247 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi]
+2025-02-09 01:45:46,654 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:45:46,654 - INFO - Downloading video: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi for User 1289304344
+2025-02-09 01:45:51,177 - INFO - Downloaded File Size: 2.28MB for User 1289304344
+2025-02-09 01:45:55,860 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:45:56,613 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendVideo "HTTP/1.1 200 OK"
+2025-02-09 01:45:56,614 - INFO - Video sent successfully to 1289304344
+2025-02-09 01:45:56,989 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-09 01:45:56,989 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: asdsad]
+2025-02-09 01:45:56,989 - WARNING - Invalid Link: asdsad from User 1289304344
+2025-02-09 01:45:57,373 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:45:57,374 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: adcfas]
+2025-02-09 01:45:57,374 - WARNING - Invalid Link: adcfas from User 1289304344
+2025-02-09 01:45:58,367 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:45:58,367 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi]
+2025-02-09 01:45:58,782 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:45:58,783 - INFO - Downloading video: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi for User 1289304344
+2025-02-09 01:46:02,760 - INFO - Downloaded File Size: 2.28MB for User 1289304344
+2025-02-09 01:46:06,118 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:46:06,625 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendVideo "HTTP/1.1 200 OK"
+2025-02-09 01:46:06,626 - INFO - Video sent successfully to 1289304344
+2025-02-09 01:46:07,001 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-09 01:46:12,640 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:46:12,641 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: fsaf]
+2025-02-09 01:46:12,641 - WARNING - Invalid Link: fsaf from User 1289304344
+2025-02-09 01:46:14,278 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:46:17,580 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:46:17,581 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: sadasd]
+2025-02-09 01:46:17,581 - WARNING - Invalid Link: sadasd from User 1289304344
+2025-02-09 01:46:18,004 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:46:26,655 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:46:26,656 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi]
+2025-02-09 01:46:27,692 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:46:27,693 - INFO - Downloading video: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi for User 1289304344
+2025-02-09 01:46:32,642 - INFO - Downloaded File Size: 2.28MB for User 1289304344
+2025-02-09 01:46:36,900 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:46:37,663 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendVideo "HTTP/1.1 200 OK"
+2025-02-09 01:46:37,664 - INFO - Video sent successfully to 1289304344
+2025-02-09 01:46:38,060 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-09 01:46:47,131 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:46:57,386 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:47:07,586 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:47:17,798 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:47:28,037 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:47:38,290 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:48:29,182 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:48:29,182 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:48:29,369 - INFO - Bot started and listening for messages.
+2025-02-09 01:48:30,277 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-09 01:48:31,105 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-09 01:48:31,105 - INFO - Scheduler started
+2025-02-09 01:48:31,105 - INFO - Application started
+2025-02-09 01:48:37,025 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:48:37,025 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: asdas]
+2025-02-09 01:48:37,025 - WARNING - Invalid Link: asdas from User 1289304344
+2025-02-09 01:48:38,025 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:48:43,776 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:48:43,777 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi]
+2025-02-09 01:48:44,788 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:48:44,789 - INFO - Downloading best quality video: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi for User 1289304344
+2025-02-09 01:48:52,938 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendVideo "HTTP/1.1 200 OK"
+2025-02-09 01:48:52,939 - INFO - Video sent successfully to 1289304344
+2025-02-09 01:48:53,409 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-09 01:48:53,997 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:49:04,194 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:49:14,429 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:49:24,712 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:49:34,966 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:49:46,012 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:49:46,027 - INFO - Application is stopping. This might take a moment.
+2025-02-09 01:49:46,027 - INFO - Scheduler has been shut down
+2025-02-09 01:49:46,027 - INFO - Application.stop() complete
+2025-02-09 01:50:07,960 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:50:07,960 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:50:08,147 - INFO - Bot started and listening for messages.
+2025-02-09 01:50:09,020 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-09 01:50:09,322 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-09 01:50:09,337 - INFO - Scheduler started
+2025-02-09 01:50:09,337 - INFO - Application started
+2025-02-09 01:50:20,214 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:50:30,411 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:50:40,662 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:50:50,908 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:01,171 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:11,414 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:21,796 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:32,238 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:42,446 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:52,698 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:51:59,671 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:51:59,671 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:51:59,875 - INFO - Bot started and listening for messages.
+2025-02-09 01:52:00,833 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-09 01:52:01,178 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-09 01:52:01,178 - INFO - Scheduler started
+2025-02-09 01:52:01,178 - INFO - Application started
+2025-02-09 01:52:11,851 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:52:22,077 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:52:32,368 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:52:42,596 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:52:52,856 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:53:03,076 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:53:13,289 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:53:23,579 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:53:33,799 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:53:44,073 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:53:54,270 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:54:04,555 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:54:14,751 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:54:24,994 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:54:35,217 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:54:39,539 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:54:39,539 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:54:39,726 - INFO - 🚀 Bot started and listening for messages.
+2025-02-09 01:54:40,609 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-09 01:54:40,834 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-09 01:54:40,834 - INFO - Scheduler started
+2025-02-09 01:54:40,834 - INFO - Application started
+2025-02-09 01:54:41,480 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-09 01:54:41,480 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-09 01:54:45,849 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-09 01:54:45,849 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-09 01:54:47,075 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-09 01:54:47,075 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-09 01:54:51,803 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-09 01:54:51,803 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-09 01:54:53,638 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-09 01:54:53,638 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 267, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 4480, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-09 01:55:08,733 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.13.82:5000
+2025-02-09 01:55:08,733 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:55:08,920 - INFO - 🚀 Bot started and listening for messages.
+2025-02-09 01:55:09,696 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-09 01:55:09,947 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-09 01:55:09,947 - INFO - Scheduler started
+2025-02-09 01:55:09,947 - INFO - Application started
+2025-02-09 01:55:21,098 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:55:32,040 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:55:36,080 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-09 01:55:36,081 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi]
+2025-02-09 01:55:37,010 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-09 01:55:37,011 - INFO - Downloading video: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi for User 1289304344
