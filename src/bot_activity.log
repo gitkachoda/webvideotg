@@ -368,3 +368,738 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2025-02-09 01:55:36,081 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi]
 2025-02-09 01:55:37,010 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
 2025-02-09 01:55:37,011 - INFO - Downloading video: https://www.instagram.com/reel/DFZN43mzNCx/?igsh=cGhwYjN4MGRmNXFi for User 1289304344
+2025-02-22 22:53:31,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+2025-02-22 22:53:31,654 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 22:53:31,661 - INFO - 🚀 Bot started and listening for messages.
+2025-02-22 22:53:32,190 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-22 22:53:32,364 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-22 22:53:32,366 - INFO - Application started
+2025-02-22 22:53:37,039 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:53:37,040 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:37,040 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:42,891 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:53:42,892 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:42,892 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:49,987 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:53:49,988 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:49,988 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:55,993 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:53:55,994 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:53:55,994 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:05,073 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:54:05,074 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:05,074 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:18,806 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:54:18,807 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:18,807 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:36,875 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:54:38,767 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:54:38,768 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:38,768 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:54:49,929 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:55:00,084 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:55:00,538 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:55:00,539 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:55:00,539 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:55:11,707 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:55:21,862 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:55:30,858 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:55:30,858 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:55:30,859 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:55:32,770 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:55:32,772 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 22:55:33,515 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 22:55:33,516 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 22:55:36,309 - ERROR - Video download error: [0;31mERROR:[0m unable to open for writing: [Errno 2] No such file or directory: 'downloads\\9M views · 90K reactions ｜ The PERFECT Incline Bench Press ✅ 1. Use a Full Grip, Not a Thumbless Grip Always wrap your thumbs around the bar to ensure a secure grip and prevent the bar from slipping out of your hands. 2. Keep Your Elbows Tucked Avoid flaring your elbows out excessively. Instead, tuck them slightly so your forearms stay roughly vertical during the lift for better shoulder stability. 3. Maintain a Neutral Wrist Position Don’t let your wrists bend too far back. Keep them straight and aligned with your forearms to improve force transfer and reduce strain. 4. Lower the Bar to the Correct Spot Avoid lowering the bar to your collarbone, as this can cause elbow flare and increase the risk of injury. Instead, aim to lower the bar to your upper-to-middle chest for optimal form and safety. Size & Shred Training program 👉🏻 deltabolic.com ｜ Andrew Kwong.f3897672917143244v.mp4.part'
+2025-02-22 22:55:36,309 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 22:55:36,758 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 22:55:42,930 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:55:53,084 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:56:03,239 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:56:05,543 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:56:05,543 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:56:05,543 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:56:16,704 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:56:26,857 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:56:37,016 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:56:40,613 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:56:40,614 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:56:40,614 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:56:51,774 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:57:01,929 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:57:12,086 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:57:15,318 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:57:15,319 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:57:15,319 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:57:26,479 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:57:36,633 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:57:46,788 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:57:50,012 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:57:50,013 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:57:50,013 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:58:01,172 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:58:01,775 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:58:01,776 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 22:58:02,709 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 22:58:02,710 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 22:58:04,759 - ERROR - Video download error: [0;31mERROR:[0m unable to open for writing: [Errno 2] No such file or directory: 'downloads\\9M views · 90K reactions ｜ The PERFECT Incline Bench Press ✅ 1. Use a Full Grip, Not a Thumbless Grip Always wrap your thumbs around the bar to ensure a secure grip and prevent the bar from slipping out of your hands. 2. Keep Your Elbows Tucked Avoid flaring your elbows out excessively. Instead, tuck them slightly so your forearms stay roughly vertical during the lift for better shoulder stability. 3. Maintain a Neutral Wrist Position Don’t let your wrists bend too far back. Keep them straight and aligned with your forearms to improve force transfer and reduce strain. 4. Lower the Bar to the Correct Spot Avoid lowering the bar to your collarbone, as this can cause elbow flare and increase the risk of injury. Instead, aim to lower the bar to your upper-to-middle chest for optimal form and safety. Size & Shred Training program 👉🏻 deltabolic.com ｜ Andrew Kwong.f3897672917143244v.mp4.part'
+2025-02-22 22:58:04,759 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 22:58:05,197 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 22:58:11,932 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:58:22,087 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:58:24,692 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 409 Conflict"
+2025-02-22 22:58:24,694 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:58:24,694 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 607, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 335, in polling_action_cb
+    raise exc
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_updater.py", line 320, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 543, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 381, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 3661, in get_updates
+    await self._post(
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 469, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\ext\_extbot.py", line 325, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\_bot.py", line 497, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rosha\AppData\Local\Programs\Python\Python311\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-02-22 22:58:35,850 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:58:46,006 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:58:56,162 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:59:00,595 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:59:00,597 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 22:59:01,367 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 22:59:01,368 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 22:59:03,290 - ERROR - Video download error: [0;31mERROR:[0m unable to open for writing: [Errno 2] No such file or directory: 'downloads\\9M views · 90K reactions ｜ The PERFECT Incline Bench Press ✅ 1. Use a Full Grip, Not a Thumbless Grip Always wrap your thumbs around the bar to ensure a secure grip and prevent the bar from slipping out of your hands. 2. Keep Your Elbows Tucked Avoid flaring your elbows out excessively. Instead, tuck them slightly so your forearms stay roughly vertical during the lift for better shoulder stability. 3. Maintain a Neutral Wrist Position Don’t let your wrists bend too far back. Keep them straight and aligned with your forearms to improve force transfer and reduce strain. 4. Lower the Bar to the Correct Spot Avoid lowering the bar to your collarbone, as this can cause elbow flare and increase the risk of injury. Instead, aim to lower the bar to your upper-to-middle chest for optimal form and safety. Size & Shred Training program 👉🏻 deltabolic.com ｜ Andrew Kwong.f3897672917143244v.mp4.part'
+2025-02-22 22:59:03,291 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 22:59:03,743 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 22:59:10,751 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:59:20,907 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:59:31,065 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:59:41,224 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 22:59:51,381 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:00:01,534 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:00:11,688 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:00:21,846 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:00:32,005 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:00:42,161 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:00:52,315 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:01:02,472 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:01:20,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+2025-02-22 23:01:20,358 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 23:01:20,369 - INFO - 🚀 Bot started and listening for messages.
+2025-02-22 23:01:20,860 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-22 23:01:21,015 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-22 23:01:21,017 - INFO - Application started
+2025-02-22 23:01:27,898 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:01:27,899 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 23:01:28,633 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:01:28,633 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 23:01:31,242 - ERROR - Video download error: [0;31mERROR:[0m unable to open for writing: [Errno 2] No such file or directory: 'downloads\\9M views · 90K reactions ｜ The PERFECT Incline Bench Press ✅ 1. Use a Full Grip, Not a Thumbless Grip Always wrap your thumbs around the bar to ensure a secure grip and prevent the bar from slipping out of your hands. 2. Keep Your Elbows Tucked Avoid flaring your elbows out excessively. Instead, tuck them slightly so your forearms stay roughly vertical during the lift for better shoulder stability. 3. Maintain a Neutral Wrist Position Don’t let your wrists bend too far back. Keep them straight and aligned with your forearms to improve force transfer and reduce strain. 4. Lower the Bar to the Correct Spot Avoid lowering the bar to your collarbone, as this can cause elbow flare and increase the risk of injury. Instead, aim to lower the bar to your upper-to-middle chest for optimal form and safety. Size & Shred Training program 👉🏻 deltabolic.com ｜ Andrew Kwong.f3897672917143244v.mp4.part'
+2025-02-22 23:01:31,242 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 23:01:31,680 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:01:38,051 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:01:48,203 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:01:58,360 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:02:08,517 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:02:18,674 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:02:28,827 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:02:39,034 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:02:49,213 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:02:59,377 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:03:09,527 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:03:19,680 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:03:29,839 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:03:39,992 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:03:50,144 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:04:00,303 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:04:10,458 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:04:20,610 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:04:29,109 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+2025-02-22 23:04:29,110 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 23:04:29,121 - INFO - 🚀 Bot started and listening for messages.
+2025-02-22 23:04:29,652 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-22 23:04:29,852 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-22 23:04:29,853 - INFO - Application started
+2025-02-22 23:04:35,815 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:04:35,817 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 23:04:36,708 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:04:36,708 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 23:04:42,468 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 23:04:43,288 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:04:45,973 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:04:56,130 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:05:06,323 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:05:16,492 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:05:26,653 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:05:36,808 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:05:46,965 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:05:57,127 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:06:07,285 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:06:17,489 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:06:27,654 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:06:37,815 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:06:47,974 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:07:07,695 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+2025-02-22 23:07:07,695 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 23:07:07,704 - INFO - 🚀 Bot started and listening for messages.
+2025-02-22 23:07:08,718 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-22 23:07:08,925 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-22 23:07:08,926 - INFO - Application started
+2025-02-22 23:07:19,415 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:07:26,064 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:07:26,066 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 23:07:26,802 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:07:26,802 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 23:07:31,101 - ERROR - Video download error: [0;31mERROR:[0m unable to open for writing: [Errno 2] No such file or directory: 'downloads\\9M views · 90K reactions ｜ The PERFECT Incline Bench Press ✅ 1. Use a Full Grip, Not a Thumbless Grip Always wrap your thumbs around the bar to ensure a secure grip and prevent the bar from slipping out of your hands. 2. Keep Your Elbows Tucked Avoid flaring your elbows out excessively. Instead, tuck them slightly so your forearms stay roughly vertical during the lift for better shoulder stability. 3. Maintain a Neutral Wrist Position Don’t let your wrists bend too far back. Keep them straight and aligned with your forearms to improve force transfer and reduce strain. 4. Lower the Bar to the Correct Spot Avoid lowering the bar to your collarbone, as this can cause elbow flare and increase the risk of injury. Instead, aim to lower the bar to your upper-to-middle chest for optimal form and safety. Size & Shred Training program 👉🏻 deltabolic.com ｜ Andrew Kwong.f3897672917143244v.mp4.part'
+2025-02-22 23:07:31,101 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 23:07:31,539 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:07:36,222 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:07:46,385 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:07:56,555 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:08:06,709 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:08:56,760 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+2025-02-22 23:08:56,760 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 23:08:56,769 - INFO - 🚀 Bot started and listening for messages.
+2025-02-22 23:08:57,310 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-22 23:08:57,479 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-22 23:08:57,480 - INFO - Application started
+2025-02-22 23:09:02,298 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:02,299 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 23:09:02,792 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:02,792 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 23:09:07,523 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 23:09:07,948 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:12,460 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:15,417 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:15,420 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DGMzbGNpKVL/?igsh=NG54emp5ZGw5N3Ft]
+2025-02-22 23:09:16,180 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:16,181 - INFO - Downloading video: https://www.instagram.com/reel/DGMzbGNpKVL/?igsh=NG54emp5ZGw5N3Ft for User 1289304344
+2025-02-22 23:09:18,312 - ERROR - Telegram Send Error: Chat.send_video() got an unexpected keyword argument 'timeout'
+2025-02-22 23:09:18,738 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:19,153 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:25,579 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:31,296 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:31,297 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DGMzbGNpKVL/?igsh=NG54emp5ZGw5N3Ft]
+2025-02-22 23:09:32,034 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:32,035 - INFO - Downloading video: https://www.instagram.com/reel/DGMzbGNpKVL/?igsh=NG54emp5ZGw5N3Ft for User 1289304344
+2025-02-22 23:09:33,713 - ERROR - Telegram Send Error: Chat.send_video() got an unexpected keyword argument 'timeout'
+2025-02-22 23:09:34,139 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:34,546 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:41,458 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:51,615 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:59,007 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:09:59,008 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DDGwfnvxeve/?igsh=eW9xOHljY3FvY3Fj]
+2025-02-22 23:09:59,744 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:09:59,745 - INFO - Downloading video: https://www.instagram.com/reel/DDGwfnvxeve/?igsh=eW9xOHljY3FvY3Fj for User 1289304344
+2025-02-22 23:10:01,765 - ERROR - Telegram Send Error: Chat.send_video() got an unexpected keyword argument 'timeout'
+2025-02-22 23:10:02,227 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:10:02,647 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-22 23:10:09,231 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:10:19,404 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:10:23,197 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:10:23,198 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DDGwfnvxeve/?igsh=eW9xOHljY3FvY3Fj]
+2025-02-22 23:10:23,921 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:10:23,922 - INFO - Downloading video: https://www.instagram.com/reel/DDGwfnvxeve/?igsh=eW9xOHljY3FvY3Fj for User 1289304344
+2025-02-22 23:10:25,567 - ERROR - Telegram Send Error: Chat.send_video() got an unexpected keyword argument 'timeout'
+2025-02-22 23:10:25,985 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:10:26,387 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-22 23:10:33,357 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:10:43,521 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:10:53,694 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:11:03,860 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:11:14,033 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:11:24,197 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:11:34,359 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:11:44,521 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:11:54,687 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:12:04,930 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:12:15,181 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:12:25,351 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:12:35,511 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:12:45,667 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:12:55,831 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:13:05,989 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:13:16,152 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:13:33,252 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.148:5000
+2025-02-22 23:13:33,253 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 23:13:33,265 - INFO - 🚀 Bot started and listening for messages.
+2025-02-22 23:13:33,751 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getMe "HTTP/1.1 200 OK"
+2025-02-22 23:13:33,905 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-22 23:13:33,906 - INFO - Application started
+2025-02-22 23:13:39,762 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:13:39,763 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DDGwfnvxeve/?igsh=eW9xOHljY3FvY3Fj]
+2025-02-22 23:13:40,502 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:13:40,502 - INFO - Downloading video: https://www.instagram.com/reel/DDGwfnvxeve/?igsh=eW9xOHljY3FvY3Fj for User 1289304344
+2025-02-22 23:13:46,769 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendVideo "HTTP/1.1 200 OK"
+2025-02-22 23:13:46,770 - INFO - Video sent successfully to 1289304344
+2025-02-22 23:13:47,179 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-22 23:13:49,923 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:13:59,673 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:13:59,674 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.instagram.com/reel/DGMzbGNpKVL/?igsh=NG54emp5ZGw5N3Ft]
+2025-02-22 23:14:00,451 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:14:00,452 - INFO - Downloading video: https://www.instagram.com/reel/DGMzbGNpKVL/?igsh=NG54emp5ZGw5N3Ft for User 1289304344
+2025-02-22 23:14:05,257 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendVideo "HTTP/1.1 200 OK"
+2025-02-22 23:14:05,258 - INFO - Video sent successfully to 1289304344
+2025-02-22 23:14:05,660 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/deleteMessage "HTTP/1.1 200 OK"
+2025-02-22 23:14:09,967 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:14:14,152 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"
+2025-02-22 23:14:14,154 - INFO - New Request: [User ID: 1289304344] [Chat ID: 1289304344] [Message: https://www.facebook.com/share/r/1DNU1823q3/]
+2025-02-22 23:14:14,921 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:14:14,922 - INFO - Downloading video: https://www.facebook.com/share/r/1DNU1823q3/ for User 1289304344
+2025-02-22 23:14:19,318 - ERROR - Download Error for 1289304344: Video download failed or file doesn't exist.
+2025-02-22 23:14:19,773 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/sendMessage "HTTP/1.1 200 OK"
+2025-02-22 23:14:24,322 - INFO - HTTP Request: POST https://api.telegram.org/bot1173977284:AAGFoNhYR29E9O22zGyha6EhBgVziiuTaV4/getUpdates "HTTP/1.1 200 OK"

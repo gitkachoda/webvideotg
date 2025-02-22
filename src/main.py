@@ -4,6 +4,9 @@ import json
 import asyncio
 import logging
 import threading
+import random
+import time
+import string
 import nest_asyncio
 from dotenv import load_dotenv
 from flask import Flask, request
@@ -28,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# ✅ Flask Server Setup (No Development Warning)
+# ✅ Flask Server Setup
 app = Flask(__name__)
 
 @app.route('/')
@@ -51,24 +54,44 @@ def save_users(users):
 
 users = load_users()
 
-# ✅ Download video in best available quality
+# ✅ Improved Filename Sanitization
+def sanitize_filename(filename, max_length=50):
+    valid_chars = f"-_.() {string.ascii_letters}{string.digits}"
+    sanitized = "".join(c for c in filename if c in valid_chars)
+    return sanitized[:max_length].strip()  # Trim & remove trailing spaces
+
+# ✅ Download video in best quality with improved filename handling
 def download_video(url):
     output_path = "downloads"
-    os.makedirs(output_path, exist_ok=True)
+    os.makedirs(output_path, exist_ok=True)  # Ensure directory exists
 
-    ydl_opts = {
-        "outtmpl": f"{output_path}/%(title)s.%(ext)s",  # File name format
-        "format": "bestvideo+bestaudio/best",  # Best quality available
-        "merge_output_format": "mp4",
-        "quiet": False,  # Show logs
-        "noplaylist": True,  # Disable playlist downloads
-    }
+    user_agents = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+    ]
+    random_agent = random.choice(user_agents)
 
     try:
+        with yt_dlp.YoutubeDL({"quiet": True}) as ydl:
+            info = ydl.extract_info(url, download=False)
+            raw_filename = ydl.prepare_filename(info)
+            sanitized_name = sanitize_filename(os.path.basename(raw_filename))
+            final_path = os.path.join(output_path, sanitized_name)
+
+        ydl_opts = {
+            "outtmpl": final_path,
+            "format": "bestvideo+bestaudio/best",
+            "merge_output_format": "mp4",
+            "noplaylist": True,
+            "user_agent": random_agent
+        }
+
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(url, download=True)
-            filename = ydl.prepare_filename(info)
-            return filename
+            ydl.download([url])
+
+        return final_path if os.path.exists(final_path) else None
+
     except Exception as e:
         logger.error(f"Video download error: {e}")
         return None
@@ -129,9 +152,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.chat.send_video(
                 video=video_file,
                 has_spoiler=visibility_flag,
-                disable_notification=True,
-                write_timeout=8000,
-                read_timeout=8000
+                disable_notification=True
             )
         logger.info(f"Video sent successfully to {user_id}")
 
